@@ -1,34 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Ping coming soon page | Frontend Mentor</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4279f73342.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <div class="wrapper">
+    <img src="./images/logo.svg" class="logo" alt="logo">
 
-  We are launching soon!
+    <header>
+      <h1>We are launching soon!</h1>
+      <p>Subscribe and get notified</p>
+    </header>
 
-  Subscribe and get notified
+    <form action="GET">
+      <input type="text" placeholder="Your email address..." aria-label="email">
+      <button type="submit">Notify Me</button>
+    </form>
 
-  Notify Me
+    <img src="./images/illustration-dashboard.png" class="bg-decoration" alt="">
 
-  &copy; Copyright Ping. All rights reserved.
+    <footer>
+      <ul class="social">
+        <li><i class="fab fa-facebook-f"></i></li>
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-instagram"></i></li>
+      </ul>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
 
-  <footer>
+  <div>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a
+        href="https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/rarysson">Rarysson</a>.
     </p>
-  </footer>
+  </div>
 </body>
+
 </html>
