@@ -10,7 +10,7 @@ body { font-family: 'Libre Franklin', sans-serif; }
 
 .wrapper { text-align: center; }
 
-.logo {	margin-bottom: 1.5%; }
+.logo {	margin: 3% 0 1.5%; }
 
 h1 {
 	font-size: 50px;
@@ -32,7 +32,7 @@ form { 	margin-bottom: 5%; }
 form > * { font-size: 16px; }
 
 input {
-	width: 25%;
+	width: 475px;
 	padding: 15px 1.5%;
 	margin-right: 10px;
 	border: 1px solid var(--gray);
@@ -44,6 +44,7 @@ input:focus { border-color: var(--very-dark-blue); }
 input::placeholder { color: var(--gray); }
 
 button {
+	width: 190px;
 	padding: 16px 3%;
 	color: white;
 	background-color: var(--blue);
@@ -56,8 +57,13 @@ button {
 button:hover { opacity: 0.85; }
 
 .bg-decoration {
-	width: 35%;
+	width: 650px;
+	height: auto;
 	margin-bottom: 3%;
+}
+
+@media (min-width: 1921px) {
+	.bg-decoration { width: 35%; }
 }
 
 .social {
@@ -87,4 +93,32 @@ footer p {
 	color: var(--gray);
 	font-size: 12px;
 	margin-bottom: 25px;
+}
+
+
+
+
+@media (max-width: 750px) {
+	.logo { margin: 15% 0 5%; }
+
+	h1 { font-size: calc(22px + 0.5vw); }
+
+	header p { font-size: 14px; }
+
+	form { margin-bottom: 15%; }
+
+	form > * {
+		width: 75%;
+		margin-top: 20px;
+		font-size: 14px;
+	}
+
+	input { padding-left: 5%; }
+
+	.bg-decoration {
+		width: 85%;
+		margin-bottom: 25%;
+	}
+
+	.social { margin-bottom: 10%; }
 }
