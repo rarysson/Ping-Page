@@ -5,3 +5,86 @@
 	--gray: hsl(0, 0%, 59%);
 	--very-dark-blue: hsl(209, 33%, 12%);
 }
+
+body { font-family: 'Libre Franklin', sans-serif; }
+
+.wrapper { text-align: center; }
+
+.logo {	margin-bottom: 1.5%; }
+
+h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+h1 span {
+	color: var(--gray);
+	font-weight: 300;
+}
+
+header p {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+form { 	margin-bottom: 5%; }
+
+form > * { font-size: 16px; }
+
+input {
+	width: 25%;
+	padding: 15px 1.5%;
+	margin-right: 10px;
+	border: 1px solid var(--gray);
+	border-radius: 30px;
+}
+
+input:focus { border-color: var(--very-dark-blue); }
+
+input::placeholder { color: var(--gray); }
+
+button {
+	padding: 16px 3%;
+	color: white;
+	background-color: var(--blue);
+	border: none;
+	border-radius: 30px;
+	font-weight: 600;
+	box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+button:hover { opacity: 0.85; }
+
+.bg-decoration {
+	width: 35%;
+	margin-bottom: 3%;
+}
+
+.social {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+.social li {
+	width: 40px;
+	height: 40px;
+	margin: 0 10px;
+	color: var(--blue);
+	border: 1px solid var(--pale-blue);
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social li:hover {
+	color: white;
+	background-color: var(--blue);
+}
+
+footer p {
+	color: var(--gray);
+	font-size: 12px;
+	margin-bottom: 25px;
+}
